@@ -1,0 +1,12 @@
+consumer
+hystrix
+provider
+server
+spring-cloud-consumer-node1
+spring-cloud-consumer-node2
+turbine
+1、server、provider、consumer三个组合是简单的服务注册、服务提供、服务消费
+2、server、provider、hystrix三个组合是简单的服务注册、服务提供、服务消费的hystrix-dashboard。
+3、server、provider、spring-cloud-consumer-node1、
+spring-cloud-consumer-node2
+turbine、五个组合是简单的服务注册、服务提供、服务消费(2个)的熔断机制整体集群的形式
