@@ -1,0 +1,27 @@
+server:
+  port: 7900
+
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    http:
+        encoding:
+          charset: UTF-8
+          force: true
+          enabled: true
+          uri-encoding: UTF-8
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+    sql-script-encoding: utf-8
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.itmuch: DEBUG
