@@ -1,0 +1,12 @@
+1、Eureka Server
+提供服务注册和发现
+2、Service Provider
+服务提供方
+将自身服务注册到Eureka，从而使服务消费方能够找到
+3、Service Consumer
+服务消费方
+从Eureka获取注册服务列表，从而能够消费服务
+
+
+当启动 cloud-server cloud-consumer cloud-producer  将实现服务注册与调用的例子
+当启动 cloud-server cloud-consumer cloud-producer   cloud-producer2将实现服务注册与调用的例子负载均衡的例子  一个消费者两个提供者，浏览器进行调用时，两个提供者轮番进行提供输出
